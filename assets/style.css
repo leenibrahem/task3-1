@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*start nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    width: 100vw;
+    background-color: rgb(44, 62, 80);
+    padding:  20px 126px;
+    color: white;
+    flex-wrap: wrap;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+}
+nav .logo{
+    font-size: 30px;
+    width: max-content;;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+nav ul a:hover{
+    color: aqua;
+    cursor:alias;
+    text-decoration: underline;
+}
+/*end nav*/
+
+
+/*start hero*/
+.hero{
+    height: 100vh;
+    margin-top: 30px;
+    background-color: rgb(26, 188, 156);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.hero .picture{
+    position: relative;
+}
+.hero .circle{
+    width: 220px;
+    height: 220px;
+    background-color:rgb(44, 62, 80);
+    border-radius: 50%;
+}
+.hero .picture img{
+    position: absolute;
+    width: 170px;
+    border-radius: 60%;
+    border: none;
+    top: -20px;
+    left: 30px;
+}
+.hero h1{
+    font-size: 3.75rem;
+    color: white;
+}
+ .hero .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.hero .icon .leen2{
+    width: 100px;
+    height: 5px;
+    background-color: white;
+    border-radius: 20%;
+}
+.hero .work{
+    color: white; 
+    font-size: 20px;
+}
+/*end hero*/
+
+/*start portoflio*/
+#PORTFOLIO h1{
+   width: max-content;
+   margin: 10px auto;
+   font-size: 3.75rem;
+   color: rgb(44, 62, 80);
+}
+#PORTFOLIO .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(44, 62, 80);
+    width: max-content;
+    margin:10px auto;
+}
+#PORTFOLIO .icon .leen2{ 
+    width: 100px;
+    height: 5px;
+    background-color:rgb(44, 62, 80);
+    border-radius: 20%;
+    flex-wrap: wrap;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.container .card{
+width: 256px;
+height: 256px;
+position: relative;
+
+gap: 10px;
+}
+.container .card .circle{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:white;
+    border-radius: 50%;
+}
+.container .card .circle img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 125px;
+}
+
+/*end portfolio*/
+
+/*start about*/
+#ABOUT{
+   
+    background-color: rgb(26, 188, 156);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+#ABOUT h1{
+    font-size: 3.75rem;
+}
+#ABOUT .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    margin: 10px;
+}
+#ABOUT .icon .leen2{
+    width: 100px;
+    height: 5px;
+    background-color: white;
+    border-radius: 20%;
+}
+#ABOUT .info{
+    display: flex;
+    justify-content: center;
+    max-width: max-content;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+
+}
+#ABOUT button{
+    color:white;
+    background-color: rgb(26, 188, 156);
+    border: 2px solid white;
+    padding: 30px 70px;
+    border-radius: 5%;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    margin: 20px;
+}
+#ABOUT button:hover{
+    width: max-content;
+    cursor: pointer;
+}
+/*end about*/
+/*start contact*/
+#CONTACT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: max-content;
+    text-align: center;
+    margin: 0 auto;
+}
+#CONTACT h1{
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 3.75rem;
+    color: rgb(44, 62, 80);
+ }
+ #CONTACT .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(44, 62, 80);
+    width: max-content;
+    margin:10px auto;
+ }
+ #CONTACT .icon .leen2{
+    width: 100px;
+    height: 5px;
+    background-color:rgb(44, 62, 80);
+    border-radius: 20%;
+    flex-wrap: wrap;
+ }
+ #CONTACT .leen{
+    width: 280px;
+    display: flex;
+    justify-content:flex-start;
+    text-align:left;
+    flex-direction: column;
+    gap: 20px;
+
+  
+ }
+input {
+    font-size: 25px;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    outline: none;
+    border-bottom: gray;
+
+}
+input:focus{
+    border-bottom: blue;
+}
+ textarea{
+    border: none;
+    outline: none;
+    height: max-content;
+    font-size: 20px;
+ }
+ #CONTACT button{
+    color:white;
+    background-color: rgb(26, 188, 156);
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 5%;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    margin: 20px;
+   
+ }
+ #CONTACT button:hover{
+    width: max-content;
+    cursor: pointer;
+ }
+/*end contact*/
+
+/*start footer*/
+.free{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(44, 62, 80);
+    color: white;
+    width: 100%;
+    
+}
+.free .parent{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    font-size: 20px;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+.free .parent .child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    justify-content: center;
+}
+.free .parent .child .social{
+    display: flex;
+    gap: 20px;
+    font-size: 40px;
+}
+footer{
+    background-color: rgb(26, 37, 47);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    display: flex;
+    gap: 5px;
+   justify-content: center;
+   align-items: center;
+   width: 100%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    html{
+        font-size: 10px;
+    }
+    .hero h1{
+        font-size: 30px;
+    }
+
+    
+}
